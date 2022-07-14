@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 // assigning the port
-const port = 3001;
+const PORT = process.env.PORT || 3001;
 
 //requiring the data
 const{animals} = require('./data/animal');
